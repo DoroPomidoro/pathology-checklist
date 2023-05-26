@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Чек лист опухолей желудка</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>
+        Заключение случая рака желудка.
+    </h1>
+    <form>
+        <fieldset>
+            <p>
+                Способ получения материала:
+            </p>
+            <p>
+                <input type="radio" id="endoscopic-resection" value="Эндоскопическая резекция" name="procedure-type">
+                <label for="endoscopic-resection">Эндоскопическая резекция</label>
+            </p>
+            <p>
+                <input type="radio" id="total-gastrectomy" value="Полная гастрэктомия" name="procedure-type">
+                <label for="total-gastrectomy">Полная гастрэктомия</label>
+            </p>
+            <p>
+                <input type="radio" id="partial-gastrectomy-proximal" value="Частичная гастрэктомия, проксимальная" name="procedure-type">
+                <label for="partial-gastrectomy-proximal">Частичная гастрэктомия, проксимальная</label>
+            </p>
+            <p>
+                <input type="radio" id="partial-gastrectomy-distal" value="Частичная гастрэктомия, дистальная" name="procedure-type">
+                <label for="partial-gastrectomy-distal">Частичная гастрэктомия, дистальная</label>
+            </p>
+            <p>
+                <input type="radio" id="partial-gastrectomy-other" value="Частичная гастрэктомия, другое (указать):" name="procedure-type">
+                <label for="partial-gastrectomy-other">Частичная гастрэктомия, другое (указать):</label>
+                <input type="text" id="partial-gastrectomy-other" name="procedure-type">
+            </p>
+            <p>
+                <input type="radio" id="other" value="Другое (указать):" name="procedure-type">
+                <label for="other">Другое (указать):</label>
+                <input type="text" id="partial-gastrectomy-other" name="procedure-type">
+            </p>
+            <p>
+                <input type="radio" id="not-specified" value="Не указан" name="procedure-type">
+                <label for="not-specified">Не указан</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Образец</legend>
+            <p>
+                <input type="checkbox" id="cardia" value="Кардия" name="specimen">
+                <label for="cardia">Кардия</label>
+            </p>
+            <p>
+                <input type="checkbox" id="fundus" value="Дно" name="specimen">
+                <label for="fundus">Дно</label>
+
+                <select name="list1">
+                    <option value="" selected>Выберите из списка</option>
+                    <option value="Передняя стенка">Передняя стенка</option>
+                    <option value="Задняя стенка">Задняя стенка</option>
+                </select>
+            </p>
+            <p>
+                <input type="checkbox" id="body" value="Тело" name="specimen">
+                <label for="body">Тело</label>
+                <select name="list2">
+                    <option value="" selected>Выберите из списка</option>
+                    <option value="Передняя стенка">Передняя стенка</option>
+                    <option value="Задняя стенка">Задняя стенка</option>
+                    <option value="Малая кривизна">Малая кривизна</option>
+                    <option value="Большая кривизна">Большая кривизна</option>
+                </select>
+            </p>
+            <p>
+                <input type="checkbox" id="antrum" value="Антрум" name="specimen">
+                <label for="antrum">Антрум</label>
+                <select name="list3">
+                    <option value="" selected>Выберите из списка</option>
+                    <option value="Передняя стенка">Передняя стенка</option>
+                    <option value="Задняя стенка">Задняя стенка</option>
+                    <option value="Малая кривизна">Малая кривизна</option>
+                    <option value="Большая кривизна">Большая кривизна</option>
+                </select>
+            </p>
+            <p>
+                <input type="checkbox" id="pylorus" value="Пилорус" name="specimen">
+                <label for="pylorus">Пилорус</label>
+            </p>
+            <p>
+                <input type="checkbox" id="other" value="Другое (указать):" name="specimen">
+                <label for="other">Другое (указать):</label>
+                <input type="text" id="other" name="specimen">
+            </p>
+            <p>
+                <input type="checkbox" id="not-specified" value="Не указан" name="specimen">
+                <label for="not-specified">Не указан</label>
+            </p>
+        </fieldset>
+    </form>
+  </body>
