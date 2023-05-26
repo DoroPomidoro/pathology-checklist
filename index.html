@@ -102,5 +102,59 @@
                 <label for="not-specified">Не указан</label>
             </p>
         </fieldset>
+        <fieldset>
+            <legend>Размеры опухоли</legend>
+            <p>
+                <label for="greatest-dimension">Наибольший размер (сантиметры):</label>
+                <input type="text" id="greatest-dimension" name="tumor-size">
+            </p>
+            <p>
+                <label for="additional-dimensions">Дополнительные размеры (сантиметры):</label>
+                <input type="text" id="additional-dimensions 1" name="tumor-size">
+                Х
+                <input type="text" id="additional-dimensions 2" name="tumor-size">
+            </p>
+            <p>
+                <label for="сannot-be-determined">Невозможно определить (объясните):</label>
+                <input type="text" id="сannot-be-determined" name="tumor-size">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Гистологический тип</legend>
+            <p>
+                <input type="radio" id="adenocarcinoma" value="Аденокарцинома" name="histologic-type">
+                <label for="adenocarcinoma">Аденокарцинома</label>
+
+                <select name="list1">
+                    <optgroup label="Классификация P.Lauren.">
+                        <option value="" selected>Выберите из списка</option>
+                        <option value="Кишечный тип">Кишечный тип</option>
+                        <option value="Диффузный тип">Диффузный тип (включает перстневидную карциному, классифицируемую как >50% перстневидных клеток)</option>
+                        <option value="Смешанный">Смешанный (примерно равное количество кишечного и диффузного)</option>
+                    </optgroup>
+                    <optgroup label="Классификация ВОЗ">
+                        <option value="" selected>Выберите из списка</option>
+                        <option value="Тубулярная аденокарцинома">Тубулярная аденокарцинома</option>
+                        <option value="Слабокогезионная карцинома">Слабокогезионная карцинома (включая перстневидноклеточную карциному и другие варианты)</option>
+                        <option value="Муцинозная аденокарцинома">Муцинозная аденокарцинома (>50% муцинозная)</option>
+                        <option value="Папиллярная аденокарцинома">Папиллярная аденокарцинома</option>
+                        <option value="Смешанная карцинома">Смешанная карцинома (смесь дискретной железистой (тубулярной/папиллярной) и перстневидных
+                            сплоченных клеточных гистологических компонент)</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <input type="radio" id="hepatoid-adenocarcinoma" value="Гепатоидная аденокарцинома" name="histologic-type">
+                <label for="hepatoid-adenocarcinoma">Гепатоидная аденокарцинома</label>
+            </p>
+            <p>
+                <input type="radio" id="carcinoma-w-lymph-stroma" value="(Адено)карцинома с лимфоидной стромой" name="histologic-type">
+                <label for="carcinoma-w-lymph-stroma">(Адено)карцинома с лимфоидной стромой</label>
+            </p>
+            <p>
+                <input type="radio" id="micropapillary-adenocarcinoma" value="Микропапиллярная аденокарцинома" name="histologic-type">
+                <label for="micropapillary-adenocarcinoma">Микропапиллярная аденокарцинома</label>
+            </p>
+        </fieldset>
     </form>
   </body>
