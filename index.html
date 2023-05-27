@@ -36,18 +36,18 @@
                 <label for="partial-gastrectomy-distal">Частичная гастрэктомия, дистальная</label>
             </p>
             <p>
-                <input type="radio" id="partial-gastrectomy-other" value="Частичная гастрэктомия, другое (указать):" name="procedure-type">
+                <input type="radio" id="part-gastrectomy-other" value="Частичная гастрэктомия, другое (указать):" name="procedure-type"> <!-- no id -->
                 <label for="partial-gastrectomy-other">Частичная гастрэктомия, другое (указать):</label>
                 <input type="text" id="partial-gastrectomy-other" name="procedure-type">
             </p>
             <p>
-                <input type="radio" id="other" value="Другое (указать):" name="procedure-type">
+                <input type="radio" id="other-procedure-type" value="Другое (указать):" name="procedure-type"> <!-- no id -->
                 <label for="other">Другое (указать):</label>
-                <input type="text" id="partial-gastrectomy-other" name="procedure-type">
+                <input type="text" id="other" name="procedure-type">
             </p>
             <p>
-                <input type="radio" id="not-specified" value="Не указан" name="procedure-type">
-                <label for="not-specified">Не указан</label>
+                <input type="radio" id="not-specified-procedure-type" value="Не указан" name="procedure-type">
+                <label for="not-specified-procedure-type">Не указан</label>
             </p>
         </fieldset>
         <fieldset>
@@ -93,13 +93,13 @@
                 <label for="pylorus">Пилорус</label>
             </p>
             <p>
-                <input type="checkbox" id="other" value="Другое (указать):" name="specimen">
-                <label for="other">Другое (указать):</label>
-                <input type="text" id="other" name="specimen">
+                <input type="checkbox" value="Другое (указать):" name="specimen"> <!--no id-->
+                <label for="other-specimen">Другое (указать):</label>
+                <input type="text" id="other-specimen" name="specimen">
             </p>
             <p>
-                <input type="checkbox" id="not-specified" value="Не указан" name="specimen">
-                <label for="not-specified">Не указан</label>
+                <input type="checkbox" id="not-specified-specimen" value="Не указан" name="specimen">
+                <label for="not-specified-specimen">Не указан</label>
             </p>
         </fieldset>
         <fieldset>
@@ -109,10 +109,10 @@
                 <input type="text" id="greatest-dimension" name="tumor-size">
             </p>
             <p>
-                <label for="additional-dimensions">Дополнительные размеры (сантиметры):</label>
-                <input type="text" id="additional-dimensions 1" name="tumor-size">
+                <label for="additional-dimensions-1">Дополнительные размеры (сантиметры):</label>
+                <input type="text" id="additional-dimensions-1" name="tumor-size">
                 Х
-                <input type="text" id="additional-dimensions 2" name="tumor-size">
+                <input type="text" id="additional-dimensions-2" name="tumor-size">
             </p>
             <p>
                 <label for="сannot-be-determined">Невозможно определить (объясните):</label>
@@ -157,4 +157,5 @@
             </p>
         </fieldset>
     </form>
+    <script src="parse.js"></script>
   </body>
