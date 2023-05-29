@@ -51,7 +51,7 @@
             </p>
         </fieldset>
         <fieldset>
-            <legend>Образец</legend>
+            <legend>Образец:</legend>
             <p>
                 <input type="checkbox" id="cardia" value="Кардия" name="specimen">
                 <label for="cardia">Кардия</label>
@@ -60,33 +60,60 @@
                 <input type="checkbox" id="fundus" value="Дно" name="specimen">
                 <label for="fundus">Дно</label>
 
-                <select name="list1">
-                    <option value="" selected>Выберите из списка</option>
-                    <option value="Передняя стенка">Передняя стенка</option>
-                    <option value="Задняя стенка">Задняя стенка</option>
-                </select>
+               <div class="subtitles">
+                <p>
+                    <input type="checkbox" id="ant-w-fundus" value="Передняя стенка" name="specimen">
+                    <label for="ant-w-fundus">Дно: передняя стенка</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="post-w-fundus" value="Задняя стенка" name="specimen">
+                    <label for="post-w-fundus">Дно: задняя стенка</label>
+                </p>
+               </div>
             </p>
             <p>
                 <input type="checkbox" id="body" value="Тело" name="specimen">
                 <label for="body">Тело</label>
-                <select name="list2">
-                    <option value="" selected>Выберите из списка</option>
-                    <option value="Передняя стенка">Передняя стенка</option>
-                    <option value="Задняя стенка">Задняя стенка</option>
-                    <option value="Малая кривизна">Малая кривизна</option>
-                    <option value="Большая кривизна">Большая кривизна</option>
-                </select>
+                <div class="subtitles">
+                    <p>
+                        <input type="checkbox" id="ant-w-body" value="Передняя стенка" name="specimen">
+                        <label for="ant-w-body">Тело: передняя стенка</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="post-w-body" value="Задняя стенка" name="specimen">
+                        <label for="post-w-body">Тело: задняя стенка</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="lesser-curvature-body" value="Малая кривизна" name="specimen">
+                        <label for="lesser-curvature-body">Тело: малая кривизна</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="greater-curvature-body" value="Большая кривизна" name="specimen">
+                        <label for="greater-curvature-body">Тело: большая кривизна</label>
+                    </p>
+                   </div>
             </p>
             <p>
                 <input type="checkbox" id="antrum" value="Антрум" name="specimen">
                 <label for="antrum">Антрум</label>
-                <select name="list3">
-                    <option value="" selected>Выберите из списка</option>
-                    <option value="Передняя стенка">Передняя стенка</option>
-                    <option value="Задняя стенка">Задняя стенка</option>
-                    <option value="Малая кривизна">Малая кривизна</option>
-                    <option value="Большая кривизна">Большая кривизна</option>
-                </select>
+                <div class="subtitles">
+                    <p>
+                        <input type="checkbox" id="ant-w-antrum" value="Передняя стенка" name="specimen">
+                        <label for="ant-w-antrum">Антрум: передняя стенка</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="post-w-antrum" value="Задняя стенка" name="specimen">
+                        <label for="post-w-antrum">Антрум: задняя стенка</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="lesser-curvature-antrum" value="Малая кривизна" name="specimen">
+                        <label for="lesser-curvature-antrum">Антрум: малая кривизна</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="greater-curvature-antrum" value="Большая кривизна" name="specimen">
+                        <label for="greater-curvature-antrum">Антрум: большая кривизна</label>
+                    </p>
+                   </div>
             </p>
             <p>
                 <input type="checkbox" id="pylorus" value="Пилорус" name="specimen">
@@ -103,35 +130,59 @@
             </p>
         </fieldset>
         <fieldset>
-            <legend>Размеры опухоли</legend>
+            <legend>Размеры опухоли:</legend>
             <p>
                 <label for="greatest-dimension">Наибольший размер (сантиметры):</label>
                 <input type="text" id="greatest-dimension" name="tumor-size">
             </p>
-            <p>
+            <!-- <p>
                 <label for="additional-dimensions-1">Дополнительные размеры (сантиметры):</label>
                 <input type="text" id="additional-dimensions-1" name="tumor-size">
                 Х
                 <input type="text" id="additional-dimensions-2" name="tumor-size">
-            </p>
+            </p> -->
             <p>
                 <label for="сannot-be-determined">Невозможно определить (объясните):</label>
                 <input type="text" id="сannot-be-determined" name="tumor-size">
             </p>
         </fieldset>
         <fieldset>
-            <legend>Гистологический тип</legend>
+            <legend>Гистологический тип:</legend>
             <p>
                 <input type="radio" id="adenocarcinoma" value="Аденокарцинома" name="histologic-type">
                 <label for="adenocarcinoma">Аденокарцинома</label>
 
+                <div class="subtitles">
+                    <p>Классификация ВОЗ</p>
+                    <p>
+                        <input type="radio" id="tubular-adenocarcinoma" value="Тубулярная аденокарцинома" name="histologic-type">
+                        <label for="tubular-adenocarcinoma">Тубулярная аденокарцинома</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="cohesive-carcinoma" value="Плохо когезивная карцинома" name="histologic-type">
+                        <label for="cohesive-carcinoma">Плохо когезивная карцинома</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="mucinous-adenocarcinoma" value="Муцинозная аденокарцинома" name="histologic-type">
+                        <label for="mucinous-adenocarcinoma">Муцинозная аденокарцином</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="papillary-adenocarcinoma" value="Папиллярная аденокарцином" name="histologic-type">
+                        <label for="papillary-adenocarcinoma">Папиллярная аденокарцином</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="mixed-adenocarcinoma" value="Смешанная карцинома" name="histologic-type">
+                        <label for="mixed-adenocarcinoma">Смешанная карцинома</label>
+                    </p>
+                </div>
+
                 <select name="list1">
-                    <optgroup label="Классификация P.Lauren.">
+                    <!-- <optgroup label="Классификация P.Lauren.">
                         <option value="" selected>Выберите из списка</option>
                         <option value="Кишечный тип">Кишечный тип</option>
                         <option value="Диффузный тип">Диффузный тип (включает перстневидную карциному, классифицируемую как >50% перстневидных клеток)</option>
                         <option value="Смешанный">Смешанный (примерно равное количество кишечного и диффузного)</option>
-                    </optgroup>
+                    </optgroup> -->
                     <optgroup label="Классификация ВОЗ">
                         <option value="" selected>Выберите из списка</option>
                         <option value="Тубулярная аденокарцинома">Тубулярная аденокарцинома</option>
@@ -159,6 +210,6 @@
         <br>
         <button id="btn-final">Отправить</button>
     </form>
-    
+
     <script src="parse.js"></script>
   </body>
