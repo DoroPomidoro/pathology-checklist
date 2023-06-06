@@ -18,8 +18,15 @@ function serialize (form) {
                             break;
                         }
                     case 'checkbox':
+                        if(form.elements[i].checked === true) {
+                            if (form.elements[i].parentElement.parentElement.className === "subtitles") {
+                                q.push(form.elements[i].value)
+                            } else {
+                                q.push(form.elements[i].name + " " + form.elements[i].value)
+                            }
+                        } 
+                        break;
                     case 'radio':
-                        console.log('start');
                         if(form.elements[i].checked === true) {
                             q.push(form.elements[i].name + " " + form.elements[i].value)
                         } 
@@ -51,4 +58,13 @@ document.querySelector('#btn-final').addEventListener('click', (event) => {
     event.preventDefault();
     let frm = document.querySelector('form');
     serialize(frm);
+});
+
+
+// function for flag true on checkboxes
+document.addEventListener('click', (event) => {
+    if((event.target.parentNode.parentNode.parentNode.firstElementChild.checked === false) || (event.target.checked === true)) {
+        // console.log('hi')
+        event.target.parentNode.parentNode.parentNode.firstElementChild.checked = true;
+    }
 });
